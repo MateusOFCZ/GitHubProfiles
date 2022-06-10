@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MateusOFCZProfile/static/css/main.e053990d.css",
-    "main.js": "/MateusOFCZProfile/static/js/main.d3815010.js",
-    "static/js/937.9129cc29.chunk.js": "/MateusOFCZProfile/static/js/937.9129cc29.chunk.js",
-    "index.html": "/MateusOFCZProfile/index.html",
-    "main.e053990d.css.map": "/MateusOFCZProfile/static/css/main.e053990d.css.map",
-    "main.d3815010.js.map": "/MateusOFCZProfile/static/js/main.d3815010.js.map",
-    "937.9129cc29.chunk.js.map": "/MateusOFCZProfile/static/js/937.9129cc29.chunk.js.map"
+    "main.css": "/GitHubProfiles/static/css/main.e053990d.css",
+    "main.js": "/GitHubProfiles/static/js/main.3f87214d.js",
+    "static/js/937.9129cc29.chunk.js": "/GitHubProfiles/static/js/937.9129cc29.chunk.js",
+    "index.html": "/GitHubProfiles/index.html",
+    "main.e053990d.css.map": "/GitHubProfiles/static/css/main.e053990d.css.map",
+    "main.3f87214d.js.map": "/GitHubProfiles/static/js/main.3f87214d.js.map",
+    "937.9129cc29.chunk.js.map": "/GitHubProfiles/static/js/937.9129cc29.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e053990d.css",
-    "static/js/main.d3815010.js"
+    "static/js/main.3f87214d.js"
   ]
 }
