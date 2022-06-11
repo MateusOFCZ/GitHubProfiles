@@ -26,7 +26,8 @@ export default function Home() {
       .then(function (response) {
         setData(response.data);
       }).catch(function (err) {
-        console.warn(`User ${username} doesn't exist.`)
+        console.error(err.message);
+        console.warn(`User ${username} not found.`)
         setData(null);
       });
   }
