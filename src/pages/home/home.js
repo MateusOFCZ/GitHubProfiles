@@ -25,6 +25,9 @@ export default function Home() {
     axios.get(`https://api.github.com/users/${username}/repos?type=owner&sort=updated`)
       .then(function (response) {
         setData(response.data);
+      }).catch(function (err) {
+        console.warn(`User ${username} doesn't exist.`)
+        setData(null);
       });
   }
 
@@ -32,7 +35,7 @@ export default function Home() {
     <div className="Home">
       {!!Data ?
         <div>
-          <Particles url={`${Config.HOMEPAGE}assets/particles.json`} init={particlesInit} />
+          <Particles url={`${Config.ASSETS_LINK}particles.json`} init={particlesInit} />
           <div className='panel'>
             <div className='header'>
               <a href={`https://github.com/${username}`} target='_blank'>{username}</a>
@@ -59,7 +62,7 @@ export default function Home() {
         :
         <div>
           <div className="loader">
-            <img src={`${Config.HOMEPAGE}assets/GitHubMark.png`}></img>
+            <img src={`${Config.ASSETS_LINK}GitHubMark.png`}></img>
           </div>
         </div>
       }

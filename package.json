@@ -1,6 +1,6 @@
 {
   "name": "mateusofcz-profile",
-  "homepage": "https://mateusofcz.github.io/GitHubProfiles/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
