@@ -3,6 +3,7 @@
   padding: 0;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .Home {
@@ -15,8 +16,8 @@
         #003e77 51%, 
         #000222 100%
   );  
-  -webkit-animation: AnimateBG 20s ease infinite;
-  animation: AnimateBG 20s ease infinite;
+  /*-webkit-animation: AnimateBG 20s ease infinite;
+  animation: AnimateBG 20s ease infinite;*/
 }
 
 .Home a {
@@ -37,7 +38,6 @@
   transform: translate(-50%, -50%);
   height: 60%;
   width: 60%;
-  box-shadow: 0 0 1vw 0.6vw #FFFFFF;
   background: #00000057;
 }
 
@@ -48,14 +48,6 @@
   transform: translate(-50%, -50%);
   width: auto;
   height: 10%;
-  -webkit-animation: Loader 2s ease infinite;
-  animation: Loader 2s ease infinite;
-}
-
-@keyframes Loader {
-  0% { opacity: 10% }
-  50% { opacity: 100% }
-  100% { opacity: 10% }
 }
 
 .Home .panel .header {
@@ -88,9 +80,8 @@
 
 .Home .panel .card_list .card {
   position: relative;
-  left: 49%;
-  top: 15%;
-  transform: translate(-50%, -49%);
+  left: 3%;
+  top: 0%;
   height: 25%;
   width: 90%;
   padding: 1%;
