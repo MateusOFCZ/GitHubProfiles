@@ -3,9 +3,6 @@ import axios from 'axios';
 import moment from 'moment';
 import 'moment/locale/pt-br';
 import Config from '../../assets/config.json';
-import Particles from 'react-tsparticles';
-import { tsParticles } from 'tsparticles-engine';
-import { loadFull } from 'tsparticles';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -24,10 +21,6 @@ export default function Home() {
 
   const [Data, setData] = useState();
 
-  const particlesInit = async (main) => {
-    await loadFull(tsParticles);
-  };
-
   if (!Data) {
     setInterval(() => {
       if (Data == null) {
@@ -45,7 +38,6 @@ export default function Home() {
 
   return (
     <motion.div className="Home" transition={{ duration: 10, repeat: Infinity, repeatDelay: 0 }} animate={{ backgroundPosition: ['0%', '50%', '100%', '50%', '0%'] }}>
-      <Particles url={`${Config.ASSETS_LINK}particles.json`} init={particlesInit} />
       {!!Data ?
         <motion.div transition={{ duration: 2, delay: 0.5 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <motion.div className='panel'  transition={{ duration: 2, delay: 1 }} animate={{ boxShadow:'0 0 1vw 0.6vw #FFFFFF' }}>
