@@ -24,7 +24,7 @@ export default function Home() {
     }, 1000);
   }
 
-  const Search = (Username) => {
+  const Search = async (Username) => {
     if (Username) {
       axios.get(`https://api.github.com/users/${Username}/repos?type=owner&sort=updated`)
         .then(function (response) {
@@ -52,13 +52,13 @@ export default function Home() {
       {!!Data ?
         <motion.div transition={{ duration: 2, delay: 0.5 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <motion.span className='information' onClick={(e) => ChangeEphasis()} transition={{ duration: 1, delay: 1.5 }} initial={{ x: '-110%', opacity: 0 }} animate={{ opacity: 1, x: '2%' }}>
-            <FontAwesomeIcon icon={faInfoCircle} className='icon' /> <span className='text'>Você pode pesquisar pelo username clicando no <b>título</b>.</span>
+            <FontAwesomeIcon icon={faInfoCircle} className='icon' /> <span className='text'>Você pode pesquisar pelo username da GitHub clicando no <b>título</b> e pressionando enter.</span>
           </motion.span>
           <motion.div className='panel' transition={{ duration: 10, repeat: Infinity, repeatDelay: 0 }} animate={{ boxShadow: ['0 0 1vw 0.1vw #FFFFFF', '0 0 1vw 0.6vw #FFFFFF', '0 0 1vw 0.1vw #FFFFFF'] }}>
             <div className='header'>
               <motion.div transition={{ duration: 0.5, delay: 1 }} initial={{ y: '-350%' }} animate={{ y: '0%' }}>
                 <motion.span animate={EmphasisControls}>
-                  <input id='username_input' className='username_input' type='text' defaultValue={Username} onBlur={(e) => Search(e.target.value)} onKeyPress={(e) => e.key === 'Enter' && Search(e.target.value)}></input>
+                  <input id='username_input' className='username_input' type='text' autoComplete='off' value={Username} onBlur={(e) => Search(e.target.value)} onKeyPress={(e) => e.key === 'Enter' && Search(e.target.value)} onChange={(e) => setUsername(e.target.value.replace(/\s+/g, ''))}></input>
                 </motion.span>
               </motion.div>
             </div>

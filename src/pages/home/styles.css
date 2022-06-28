@@ -26,13 +26,13 @@
 .Home .information {
   position: absolute;
   bottom: 1%;
-  left: 0.5%;
+  left: 0.2%;
   padding: 0.5%;
   color: #FFFFFF;
   text-align: center;
-  font-size: 1vw;
-  width: 24%;
-  height: 2%;
+  font-size: 1.2vw;
+  width: 44%;
+  height: 1.5vw;
   background: #0000004B;
   border-radius: 1vw;
   cursor: pointer;
