@@ -13,7 +13,7 @@ Você pode verificar qualquer perfil inserindo o nome de usuário após o link.
 </p>
 
 - Você pode ver uma demonstração clicando [aqui](https://mateusofcz.github.io/GitHubProfiles/#/).
-- É possível ver a demonstração com os dados do seu perfil, basta inserir o seu username da GitHub para ver seus repositórios públicos, por exemplo `MateusOFCZ` ficaria [https://mateusofcz.github.io/GitHubProfiles/#/**`MateusOFCZ`**](https://mateusofcz.github.io/GitHubProfiles/#/MateusOFCZ).
+- É possível ver a demonstração com os dados do seu perfil, basta inserir o seu username da GitHub para ver seus repositórios públicos, por exemplo `MateusOFCZ` ficaria [https://mateusofcz.github.io/GitHubProfiles/#/**`MateusOFCZ`**](https://mateusofcz.github.io/GitHubProfiles/#/MateusOFCZ) ou você pode clicar no título e digitar um username da GitHub, por exemplo `MateusOFCZ`.
 
 <hr>
 
