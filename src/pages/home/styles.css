@@ -1,37 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.Home {
-  display: flex;
-  background-size: 300% 300%;
-  background-image: linear-gradient(
-        -45deg, 
-        #4ba8ff 0%, 
-        #0061bb 25%, 
-        #003e77 51%, 
-        #000222 100%
-  );
-}
-
 .Home a {
   color: inherit;
   text-decoration: none;
 }
 
 .Home .information {
-  position: absolute;
-  bottom: 1%;
-  left: 0.2%;
+  text-align: center;
+  width: 44%;
+}
+
+.Home .information_item {
+  margin-top: 0.5%;
   padding: 0.5%;
   color: #FFFFFF;
   text-align: center;
   font-size: 1.2vw;
-  width: 44%;
+  width: fit-content;
   height: 1.5vw;
   background: #0000004B;
   border-radius: 1vw;
@@ -43,6 +26,25 @@
 }
 
 .Home .information .text {
+  width: fit-content;
+}
+
+.Home .changelog_page {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  padding: 0.5%;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.2vw;
+  width: fit-content;
+  height: 1.5vw;
+  background: #0000004B;
+  border-radius: 1vw;
+  cursor: pointer;
+}
+
+.Home .changelog_page .icon {
   width: fit-content;
 }
 
@@ -107,7 +109,7 @@
   position: relative;
   left: 3%;
   top: 0%;
-  height: 25%;
+  height: fit-content;
   width: 90%;
   padding: 1%;
   margin: 1%;
@@ -136,18 +138,18 @@
   font-size: 0.9vw;
 }
 
-::-webkit-scrollbar {
+.Home ::-webkit-scrollbar {
   width: 0.5vw;
 }
 
-::-webkit-scrollbar-track {
+.Home ::-webkit-scrollbar-track {
   background: #F1F1F1;
 }
 
-::-webkit-scrollbar-thumb {
+.Home ::-webkit-scrollbar-thumb {
   background: #D3D3D3;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.Home ::-webkit-scrollbar-thumb:hover {
   background: #A8A8A8;
 }

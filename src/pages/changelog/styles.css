@@ -1,0 +1,107 @@
+.Changelog .panel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60%;
+    width: 60%;
+    background: #00000057;
+}
+
+.Changelog .panel .header {
+    position: absolute;
+    left: 50%;
+    top: 7.5%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    vertical-align: middle;
+    background: #0000004B;
+    font-variant-caps: all-petite-caps;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4vw;
+    font-weight: bolder;
+    color: #FFFFFF;
+    word-wrap: break-word;
+}
+
+.Changelog .panel .header .title {
+    color: #FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4vw;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+}
+
+.Changelog .panel .changelog_list {
+    position: absolute;
+    bottom: 0.121%;
+    width: 100%;
+    height: 85%;
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.Changelog .panel .changelog_list .card {
+    position: relative;
+    left: 3%;
+    top: 0%;
+    height: fit-content;
+    width: 90%;
+    padding: 1%;
+    margin: 1%;
+    border-radius: 1vw;
+    background: #FFFFFFC0;
+}  
+
+.Changelog .panel .changelog_list .card .title {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.Changelog .panel .changelog_list .card .content {
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+}
+
+.Changelog ::-webkit-scrollbar {
+    width: 0.5vw;
+}
+  
+.Changelog ::-webkit-scrollbar-track {
+    background: #F1F1F1;
+}
+  
+.Changelog ::-webkit-scrollbar-thumb {
+    background: #D3D3D3;
+}
+  
+.Changelog ::-webkit-scrollbar-thumb:hover {
+    background: #A8A8A8;
+}
+
+.Changelog .changelog_page {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    padding: 0.5%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.2vw;
+    width: fit-content;
+    height: 1.5vw;
+    background: #0000004B;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+  
+.Changelog .changelog_page .icon {
+    width: fit-content;
+}

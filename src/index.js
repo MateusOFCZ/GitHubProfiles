@@ -6,12 +6,13 @@ import {
   Route
 } from "react-router-dom";
 import Home from './pages/home/home';
+import './assets/styles.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <HashRouter basename="/">
     <Routes>
-      <Route exact path={`/:username`} element={<Home />} />
+      <Route exact path={`/user/:username`} element={<Home />} />
       <Route path="*" element={<Home />} />
     </Routes>
   </HashRouter>
