@@ -14,7 +14,7 @@ export default function Home(props) {
     return (
         <motion.div animate={props.ChangelogControls}>
             <motion.div className="Changelog" transition={{ duration: 2 }} initial={{ x: '200%', opacity: 0 }} animate={{ x: '0%', opacity: 1 }}>
-                <motion.div className='changelog_page' onClick={(e) => props.ChangePage('/')} transition={{ duration: 1, delay: 2 }} initial={{ x: '110%', opacity: 0 }} animate={{ opacity: 1, x: '0%' }}>
+                <motion.div className='changelog_page' onClick={(e) => props.ChangePage('/')} transition={{ duration: 1, delay: 2 }} initial={{ x: '-110%', opacity: 0 }} animate={{ opacity: 1, x: '0%' }}>
                     <FontAwesomeIcon icon={faArrowLeft} className='icon' /> <span className='text'>Back</span>
                 </motion.div>
                 <motion.div transition={{ duration: 2, delay: 0.5 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -27,9 +27,9 @@ export default function Home(props) {
                         <motion.div className='changelog_list' transition={{ duration: 2, delay: 1.5 }} initial={{ y: '350%' }} animate={{ y: '0%' }}>
                             {Object.keys(ChangelogData).map((Key, Index) => (
                                 <motion.div key={Index} className='card' transition={{ duration: 0.5 }} whileHover={{ scale: 1.05 }} viewport={{ once: false }} initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }}>
-                                    <a className='title' dangerouslySetInnerHTML={{ __html: (ChangelogData[Key].title ? ChangelogData[Key].title : 'Sem título') + (ChangelogData[Key].date ? ' | ' + ChangelogData[Key].date : '') }}></a>
+                                    <a className='title' dangerouslySetInnerHTML={{ __html: (ChangelogData[Key].title ? ChangelogData[Key].title : 'Without Title') + (ChangelogData[Key].date ? ' | ' + ChangelogData[Key].date : '') }}></a>
                                     <div>
-                                        <span className='content' dangerouslySetInnerHTML={{ __html: ChangelogData[Key].description ? ChangelogData[Key].description : 'Sem informações.' }}></span>
+                                        <span className='content' dangerouslySetInnerHTML={{ __html: ChangelogData[Key].description ? ChangelogData[Key].description : 'Without informations.' }}></span>
                                     </div>
                                 </motion.div>
                             ))}

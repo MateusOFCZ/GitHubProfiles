@@ -83,7 +83,7 @@ export default function Home() {
               <motion.div transition={{ duration: 2 }} initial={{ x: '-200%', opacity: 0 }} animate={{ x: '0%', opacity: 1 }}>
                 <motion.span className='information'>
                   <motion.div className='information_item' onClick={(e) => ChangeEphasis()} transition={{ duration: 1, delay: 1.5 }} initial={{ x: '-110%', opacity: 0 }} animate={{ opacity: 1, x: '2%' }}>
-                    <FontAwesomeIcon icon={faInfoCircle} className='icon' /> <span className='text'>Você pode pesquisar pelo username da GitHub clicando no <b>título</b> e pressionando enter.</span>
+                    <FontAwesomeIcon icon={faInfoCircle} className='icon' /> <span className='text'>You can search for the GitHub username by clicking on the <b>title</b> and pressing enter.</span>
                   </motion.div>
                 </motion.span>
                 <motion.div className='changelog_page' onClick={(e) => ChangePage('/changelog')} transition={{ duration: 1, delay: 2 }} initial={{ x: '110%', opacity: 0 }} animate={{ opacity: 1, x: '0%' }}>
@@ -102,11 +102,11 @@ export default function Home() {
                       <motion.div key={Index} className='card' transition={{ duration: 0.5 }} whileHover={{ scale: 1.05 }} viewport={{ once: false }} initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }}>
                         <a className='title' href={Data[Key].html_url} target='_blank'>{Data[Key].name}</a>
                         <div>
-                          <label className='label'>Descrição:</label>
-                          <span className='content'> {Data[Key].description ? Data[Key].description : 'Sem descrição.'}</span>
+                          <label className='label'>Description:</label>
+                          <span className='content'> {Data[Key].description ? Data[Key].description : 'Without description.'}</span>
                           <br />
-                          <label className='label'>Última Atualização:</label>
-                          <span className='content'> {Data[Key].updated_at ? `${moment(Data[Key].updated_at).format('LLL')}.` : 'Sem atualizações.'}</span>
+                          <label className='label'>Last Update:</label>
+                          <span className='content'> {Data[Key].updated_at ? `${moment(Data[Key].updated_at).format('LLL')}.` : 'Without update.'}</span>
                         </div>
                       </motion.div>
                     ))}
